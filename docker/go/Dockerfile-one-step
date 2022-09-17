@@ -1,0 +1,15 @@
+FROM ubuntu:20.04
+ARG DEBIAN_FRONTEND=noninteractive
+
+WORKDIR /usr/src/app
+
+COPY app/ .
+
+run apt-get update && \
+    apt install golang-go -y
+
+run go build -o Hello .
+
+CMD ./Hello
+
+
