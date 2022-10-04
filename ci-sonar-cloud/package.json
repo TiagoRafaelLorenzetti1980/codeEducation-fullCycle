@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./src/calc.test"
+    "test": "jest --coverage --verbose"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tape": "^5.6.1"
+    "jest": "^29.1.2"
   }
 }

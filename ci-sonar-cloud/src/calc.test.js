@@ -1,22 +1,17 @@
-const test = require('tape')
 const calculator = require('./calc');
 
-test('Calculator sum should be ok', (t) => {
-  t.assert(calculator.sum(2, 2) === 4, "Correct");
-  t.end();
+test('Calculator sum should be ok', () => {
+  expect(calculator.sum(2, 2)).toBe(4);
 });
 
-test('Calculator sub should be ok', (t) => {
-  t.assert(calculator.sub(3, 2) === 1, "Correct");
-  t.end();
+test('Calculator sub should be ok', () => {
+  expect(calculator.sub(2, 2)).toBe(0);
 });
 
-test('Calculator div should be ok', (t) => {
-  t.assert(calculator.div(6, 2) === 3, "Correct");
-  t.end();
+test('Calculator div should be ok', () => {
+  expect(calculator.div(6, 2)).toBe(3);
 });
 
-test('Calculator mult should be ok', (t) => {
-  t.assert(calculator.mult(3, 2) === 6, "Correct");
-  t.end();
+test('Calculator mult should be ok', () => {
+  expect(calculator.mult(4, 2)).toBe(8);
 });
